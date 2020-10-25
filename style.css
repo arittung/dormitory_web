@@ -91,3 +91,17 @@ a{
         border-left:none;
     }
 }
+.light{
+    font-family: "Last Ninja", Impact, fantasy;
+    font-size:50px;
+}
+
+.light2{
+    font-family: "Last Ninja", Impact, fantasy;
+    font-size:20px;
+}
+
+.light3{
+    font-family: "Last Ninja", Impact, fantasy;
+    font-size:30px;
+}
