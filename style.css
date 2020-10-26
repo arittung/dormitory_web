@@ -105,3 +105,48 @@ a{
     font-family: "Last Ninja", Impact, fantasy;
     font-size:30px;
 }
+
+.h3{
+    margin-left:2em;
+    margin-top:2em;
+}
+
+.search-button{
+    border-radius:5px;
+    background-color: rgb(109, 123, 170);
+    color:white;
+}
+
+.menu-table{
+    width:1050px;
+    margin-left:4em;
+    text-align:center;
+}
+
+.form-table{
+    margin-left:2em; 
+    margin-top:2em; 
+    font-size:20px;
+    width:1130px;
+    height:100px;
+}
+
+.write-button{
+    border-radius:8px;
+    background-color: rgb(250, 250, 250);
+    color:black;
+    font-size:16px;
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+    margin-left:35em;
+}
+
+.write-button:hover{
+    border-radius:8px;
+    background-color: rgb(231, 231, 231);
+    color:black;
+    font-size:16px;
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+    margin-left:35em;
+}
