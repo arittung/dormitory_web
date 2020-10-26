@@ -1,0 +1,171 @@
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+div, ul, li, body {
+    margin: 0;
+    padding: 0;
+}
+
+/****** Body ******/
+.row {
+    display: flex;
+    margin-left: 200px;
+    margin-top: auto;
+}
+
+.login {
+    display: flex;
+    width: 280px;
+    height: 180px;
+    border: 1px;
+    border-style: solid;
+    margin: auto 0;
+    border-radius: 15%;
+    background-color: rgb(212, 228, 187);
+}
+
+#loginForm {
+    width: 100%;
+}
+
+#loginForm h2 {
+    padding-left: 20px;
+}
+
+.entry_line {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.entry_box {
+    width: 60%;
+    margin-right: auto;
+    padding-left: 20px;
+}
+
+input {
+    height: 20px;
+    margin: 2px;
+}
+
+.login_button {
+    display: flex;
+    margin-left: 10px;
+    padding-right: 20px;
+}
+
+.login_btn {
+    border-radius: 15%;
+}
+
+.login_opt {
+    width: 100%;
+    text-align: center;
+}
+
+.main_image {
+    display: flex;
+    flex: 1;
+    margin-left: 100px;
+}
+
+.dormitory_img {
+    width: 700px;
+    height: 350px;
+    border-radius: 10%;
+}
+
+.notice {
+    width: 500px;
+    height: 350px;
+}
+
+.notice_header {
+    display: flex;
+    flex: 1;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 70px;
+}
+
+.notice h2 {
+    padding-left: 10px;
+}
+
+.more_notice {
+    display: flex;
+    margin-left: auto;
+    margin-top: auto;
+    align-items: center;
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10%;
+}
+
+.notice_contents ul li {
+    list-style: square;
+    font-size: 20px;
+    margin: 20px 50px;
+}
+
+.notice_contents {
+    border-radius: 10%;
+    border: solid black 1px;
+    background-color: skyblue;
+}
+
+.notice_lists {
+    color: black;
+}
+
+.notice_contents hr{
+    margin: 2px;
+}
+
+.menu {
+    width: 400px;
+    margin-left: 100px;
+}
+
+.menu h2 {
+    padding-left: 10px;
+}
+
+.menu_table {
+    width: 100%;
+    height: 300px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.time {
+    font-weight: 600;
+    background-color: rgb(253, 205, 116);
+}
+
+.menu_contents {
+    width: 80%;
+    background-color: rgb(247, 247, 155);
+}
+
+/****** Footer ******/
+.footer {
+    display: flex;
+    background-attachment: white;
+    height: 100px;
+    margin-top: auto;
+    text-align: center;
+    color: gray;
+}
+
+.land_copyright {
+    margin-top: 25px;
+    margin-left: 550px;
+}
