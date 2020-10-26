@@ -43,7 +43,42 @@
             </table>
         </div>
         <div class="line">
-            여기에 하면 되요!
+            <!-- 페이지 제목 -->
+            <div style="margin-left:2em; margin-top:2em;">고장 신고</div>
+             <!-- 페이지 경로 -->
+            <div style="margin-left:68em; font-size:15px">home/학생생활/고장신고</div>
+
+            <!-- 검색창 -->
+            <div style="display:inline-block; margin-left:878px; margin-top:50px;">
+                <select name="subjects" style="height:2.5em;">
+                    <option value="1" selected>제목</option>
+                    <option value="2">작성자</option>
+                    <option value="2">작성일</option>
+                </select>
+                <input type="search" style="height:2em;" name="search">
+                <input type="submit" class="search-button" value="검색">
+            </div>
+
+            <!-- 고장신고 글 리스트 -->
+            <div style="margin-left: 80px; margin-top:10px; font-size:16px">
+                <table style="background-color: rgb(209, 207, 207);" width="1100">
+                    <tr>
+                        <td width="100" align=center>번호</th>
+                        <td width="100" align=center>동호실</th>
+                        <td width="600" align=center>제목</th>
+                        <td width="100" align=center>작성자</th>
+                        <td width="100" align=center>작성일</th>
+                        <td width="100" align=center>처리현황</th>
+                    </tr>
+                </table>
+            </div>
+            <br>
+
+            <!-- 페이지 번호 표시 -->
+
+            <!-- 고장신고 글 작성 -->
+            <button type="button" class="write-button" onclick="location.href='./student-breakdown-write.html'">글 작성</button>
+            
         </div>
     </div>
     </body>
