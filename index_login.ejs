@@ -2,38 +2,22 @@
 <html>
     <head>
         <title>Dormitory</title>
-        <script>
-            /*function userlogin(){
-                var id=userid.value;
-                var pw=userpassword.value;
-                var id_list=["kangseungsu","kangminseong"];
-                var pw_list=["1234","123"];
-                for(i=0;i<id_list.length;i++){
-                    if(id==id_list[i]){
-                        if(pw==pw_list[i]){
-                            docoument.loginForm.submit();
-                        }
-                    }
-                }
-                alert("로그인 실패")
-                
-                
-            }*/
-        </script>
+        
         <meta charset="utf-8">
-        <link rel="stylesheet" href="/style"></link>
-        <link rel="stylesheet" href="/index"></link>
+        <link rel="stylesheet" href="style.css"></link>
+        <link rel="stylesheet" href="index.css"></link>
     </head>
     
     <body>
         <!-- Header -->
-        <a href="/index.html"><img src="/logo.png" class="main" href="/index.html"></a>
+        <p>ID:</p>
+        <a href="index.html"><img src="logo.png" class="main" href="index.html"></a>
         <table class="logotable">
             <tr>
-                <th class="table_set"><a href="/introduction-facilities">기숙사 소개</a></th>
-                <th class="table_set"><a href="/community">커뮤니티</a></th>
-                <th class="table_set"><a href="/student-sleepout">학생 생활</a></th>
-                <th class="table_set"><a href="/mypage-myinformation">마이페이지</a></th>
+                <th class="table_set"><a href="introduction-facilities.html">기숙사 소개</a></th>
+                <th class="table_set"><a href="community.html">커뮤니티</a></th>
+                <th class="table_set"><a href="student-sleepout.html">학생 생활</a></th>
+                <th class="table_set"><a href="mypage-myinformation.html">마이페이지</a></th>
             </tr>
         </table>
         <!-- /Header -->
@@ -42,14 +26,14 @@
         <div class="row">
             <!-- Login Form -->
             <div class="login">
-                <form name="loginForm" id="loginForm" action="/index" method="post">
+                <form name="loginForm" id="loginForm" method="post">
                     <h2>
                         <span class="hidden">LOGIN</span>
                     </h2>
                     <div class="entry_line">
                         <ul class="entry_box">
                             <li>
-                                <input class="i_text" id="userid" type="text" name="user_id">
+                                <p id="demo"></p>
                             </li>
                             <li>
                                 <input class="i_text" id="userpassword" type="password" name="user_pw">
@@ -58,7 +42,7 @@
 
                         <div class="login_button">
                             <!-- <input type="image" src="" alt="로그인"> -->
-                            <button input_type="submit" class="login_btn" /*onclick="userlogin()"*/>로그인</button>
+                            <button class="login_btn" onclick="login()">로그인</button>
                         </div>
                     </div>
                 
@@ -72,7 +56,7 @@
             </div>
 
             <div class="main_image">
-                <img src="/imgs/dorm-main" alt="Main_Image" class="dormitory_img">
+                <img src="image/dorm_main.png" alt="Main_Image" class="dormitory_img">
             </div>
         </div>
 
@@ -140,4 +124,7 @@
         </footer>
         <!-- /Footer -->
     </body>
+    <script>
+        document.getElementById("demo").innerHTML =id;
+    </script>
 </html>
