@@ -4,6 +4,7 @@ var session = require('express-session');
 var bodyParser = require('body-parser');
 var app = express();
 session.login_check=0;
+session.login_name="";
 
 // index.html
 var main_a=`
@@ -15,7 +16,7 @@ var main_a=`
             </script>
             <meta charset="utf-8">
             <link rel="stylesheet" href="/style"></link>
-            <link rel="stylesheet" href="/index"></link>
+            <link rel="stylesheet" href="/indexcss"></link>
         </head>
         
         <body>
@@ -29,12 +30,12 @@ var main_a=`
                     <th class="table_set"><a href="/mypage-myinformation">마이페이지</a></th>
                 </tr>
             </table>
-            <!-- /Header --> `
-
-var login=`
+            <!-- /Header --> 
             <!-- Body -->
             <div class="row">
-            
+            `
+
+var login=`
                 <!-- Login Form -->
                 <div class="login">
                     <form name="loginForm" id="loginForm" action="/index" method="post">
@@ -67,9 +68,27 @@ var login=`
                 </div>
                 `
 
-var login_2=`
+var login_2_1=`
+            <div class="login">
+            <form name="loginForm" id="loginForm" action="/index" method="post">
+                <h3>
+                    <span class="hidden"><br>&nbsp&nbsp&nbsp`
+var login_2_2=`</span> 님 환영합니다. <br><br><br>
+                </h3>
+                <div class="entry_line">
+                </div>
 
+                <ul class="login_opt">
+                    <hr>
+                    <li>
+                        <a href="mypage-myinformation.html">마이페이지 / </a>
+                        <a href="main.html">로그아웃</a>
+                    </li>
+                </ul>
+            </form>
+            </div>
             `
+
 var main_b=`
                 <div class="main_image">
                     <img src="/imgs/dorm-main" alt="Main_Image" class="dormitory_img">
@@ -164,7 +183,7 @@ app.use(session({
 // 로그인 폼 페이지
 app.get('/main', function(req, res){
     if(session.login_check==0) res.send(main_a+login+main_b);
-    else res.send('123');
+    else res.send(main_a+login_2_1+session.login_name+login_2_2+main_b);
 });
 
 // 로그아웃 처리 - 세션 삭제 후 리다이렉트
@@ -233,6 +252,7 @@ app.get('/', function(req, res){
 // 로그인 처리 - 아이디와 패스워드 비교해서 일치하면 세션에 값을 부여하고 리다이렉트
 app.post('/index', function(req, res){
     var user = {
+        realname:'강승수',
         username:'kangseungsu',
         password:'1234',
         displayName:'kss'
@@ -240,10 +260,11 @@ app.post('/index', function(req, res){
 
     var uname = req.body.user_id;
     var pwd = req.body.user_pw;
+    session.login_name=user.realname;
 
     if(uname === user.username && pwd === user.password){
         session.login_check=1;
-        res.redirect('/community');
+        res.redirect('/main');
     } else { 
         res.redirect('/introduction-facilities');
     }
