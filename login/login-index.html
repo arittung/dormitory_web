@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dormitory</title>
+        <!-- Latest compiled and minified CSS -->
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="/csslib">
+        <!-- jQuery library -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+        <script src="/jquerylib"></script>
+        <!-- Popper JS -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+        <script src="/popperjs"></script>
+        <!-- Latest compiled JavaScript -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+        <script src="/compiledjs"></script>
+    </head>
+    
+    <body class="container p-0 my-0" style="background-color: rgb(253, 253, 235); ">
+
+        <!-- Header -->
+        <div class="row text-center" style="margin:30px">
+            <div class="col-sm-4">
+                <a href="/main"><img src="/logo" class="main" href="/main" style="margin-top:20px;"></a>
+            </div>
+            <div class="col-sm-8" style="margin-top: auto;">
+                <img src="/dorm_main" style="width: 100%; height:120px; border-radius:10px">
+                <ul class="nav nav-tabs" style="justify-content: space-between; background-color:rgb(31, 34, 80)">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-warning" data-toggle="dropdown" href="#">기숙사 소개</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/introduction-facilities">시설소개</a>
+                            <a class="dropdown-item" href="/introduction-map">약도</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-warning" data-toggle="dropdown" href="#">커뮤니티</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/community">공지사항</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-warning" data-toggle="dropdown" href="#">학생 생활</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/student-sleepout">외박신청</a>
+                            <a class="dropdown-item" href="/student-breakdown">고장신고</a>
+                            <a class="dropdown-item" href="/studnet-menu">식단표</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-warning" data-toggle="dropdown" href="#">마이페이지</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/mypage-myinformation">내 정보</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Body -->
+        <div class="container">
+            <div class="row" style="justify-content: space-between;">
+                <!-- Login Form -->
+                <div class="col-sm-3" style="background-color:rgb(149, 211, 162); padding-top:20px; border-radius:10%">
+                    <h5 class="text-center">○○○ 님 환영합니다.</h5>
+                    <img src="/imgs/person" style="width:80%; margin-left:25px">
+                    <p class="text-center" style="font-size:20px; margin-top:10px">ID</p>
+                    <div class="row" style="justify-content:space-around">
+                        <button class="btn btn-primary" style="width:40%;" onclick="location.href='/mypage-myinformation';"><b>마이페이지</b></button>
+                        <button class="btn btn-primary" style="width:40%;"><b>로그아웃</b></button>
+                    </div>
+                </div>
+                <!-- /Login Form -->
+
+                <!-- Notice -->
+                <div class="col-sm-4" style="background-color: rgb(190, 235, 243); padding-top:20px; border-radius:10%">
+                    <div class="row" style="margin:10px; justify-content: space-between;">
+                        <h3>Notice</h3>
+                        <button class="btn btn-secondary" onclick="location.href='/community';">+ 더보기</button>
+                    </div>
+    
+                    <div class="notice_contents">
+                        <ul>
+                            <li><a href="" class="text-dark" style="font-size:18px">공지사항 5</a><hr></li>
+                            <li><a href="" class="text-dark" style="font-size:18px">공지사항 4</a><hr></li>
+                            <li><a href="" class="text-dark" style="font-size:18px">공지사항 3</a><hr></li>
+                            <li><a href="" class="text-dark" style="font-size:18px">공지사항 2</a><hr></li>
+                            <li><a href="" class="text-dark" style="font-size:18px">공지사항 1</a><hr></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /Notice -->
+
+                <!-- Content Menu -->
+                <div class="col-sm-4" style="background-color: rgb(248, 216, 145); padding-top:20px; border-radius:10%">
+                    <div class="row" style="justify-content: space-between; margin:20px">
+                        <a href="/introduction-map" class="text-dark" style="width: 40%; text-align:center">
+                            <img src="/icon_map" href="/introduction-map" style="width: 100%;"><b>약도</b></a>
+                        <a href="/student-sleepout" class="text-dark" style="width: 40%; text-align:center">
+                            <img src="/icon_sleepout" href="/student-sleepout" style="width: 100%;"><b>외박신청</b></a>
+                    </div>
+                    <div class="row" style="justify-content: space-between; margin:20px">
+                        <a href="/student-breakdown" class="text-dark" style="width: 40%; text-align:center">
+                            <img src="/icon_breakdown" href="/student-breakdown" style="width: 100%;"><b>고장신고</b></a>
+                        <a href="/student-menu" class="text-dark" style="width: 40%; text-align:center">
+                            <img src="/icon_menu" href="/student-menu" style="width: 100%;"><b>주간메뉴</b></a>
+                    </div>
+                </div>
+                <!-- /Content Menu -->
+            </div>
+        </div>
+        
+        <footer class="footer text-center text-secondary" style="margin-top: 20px;">
+            <div class="land_copyright">
+                <p>&copy; Soongsil University<br>SMART SYSTEM SOFTWARE - 2020 WEB PROGRAMING TEAM 1</p>
+            </div>
+        </footer>
+    </body>
+</html>
