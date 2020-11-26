@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>아이디 비밀번호 찾기</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    </head>
+
+    <body class="container p-0 my-0 text-center" style = "background-color: rgb(250, 250, 240); ">
+        <div class ="row">
+            <div class ="col-sm-2"><a href="newmain.html"><img src="./image/logo.png" class="main" href="newmain.html" style = "margin-top:70px;"></a></div>
+            <div class = "col-sm-10"><img src="./image/dorm.png" class="main" style = "margin-top:70px; height:150px; float: right;"></div>
+        </div>
+        <nav class ="navbar navbar-expand-sm " style="margin-top:40px; background-color: rgb(31, 34, 80); ">
+            
+            <div class="collapse navbar-collapse" id="collapsibleNavbar" style ="background-color: rgb(31, 34, 80);">
+           
+               <ul class="navbar-nav " style="text-align: center; margin-left: 20px; margin-right: auto; font-size: x-large; ">
+                   <li class="nav-item" style="margin-left: 40px;">
+                       <a class="nav-link text-white " href="newmain.html" >HOME</a>
+                     </li>
+                   <li class="nav-item" style ="margin-left: 100px;">
+                     <a class="nav-link text-white " href="introduction-facilities.html" >기숙사 소개</a>
+                   </li>
+                   <li class="nav-item" style ="margin-left: 100px;">
+                     <a class="nav-link text-white" href="community.html" >커뮤니티</a>
+                   </li>
+                   <li class="nav-item" style ="margin-left: 100px;">
+                     <a class="nav-link text-white" href="student-sleepout.html">학생생활</a>
+                     </li>
+                     <li class="nav-item" style ="margin-left: 100px;">
+                       <a class="nav-link text-white" href="mypage-myinformation.html">마이페이지</a>
+                       </li>
+           </div>
+           </nav>
+    <div class="grid">
+        <div class ="row" style="margin-top: 30px;">
+            <div class = "col-sm-2" >
+                <nav class="navbar " style="border-collapse: collapse; background-color: rgb(31, 34, 80); text-align: center;">
+                    <ul class="navbar-nav" style="text-align: center; margin-left: auto; margin-right: auto; height: 40em;" >
+                      <li class="nav-item" >
+                        <a class="nav-link text-white" href="login.html" style="font-size: 23px;
+                         border-bottom:solid 2px white; margin-bottom: 40px;">부가서비스</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="list-clicked text-white" href="login.html" style="font-size: large; ">로그인</a>
+                      </li>
+                      <br>
+                      <li class="nav-item">
+                        <a class="list-clicked text-white" href="findid.html" style="font-size: large;">ID/PW 찾기</a>
+                      </li>
+                    </ul>
+                  </nav>
+            </div>
+            <div class = "col-sm-10">
+                 <!-- 페이지 제목 -->
+                 <div style="font-size: xxx-large; margin-top: 20px; color: darkslategrey;" >ID/PW 찾기</div>
+            
+                 <!-- 페이지 경로 -->
+                <div style = "font-size: medium; margin-top: 20px; text-align: right; color: darkslategrey;">home/부가서비스/ID/PW 찾기</div>
+                <!-- 내용 -->
+                <div class = "container">
+                <table class="table"style=" height: 450px; border:double 10px rgb(31, 34, 80); margin-top: 30px; background-color:rgb(232, 236, 248); font-size:xx-large" >
+                    <tbody>
+                        <tr>
+                            <td style = "vertical-align: middle; text-align: center; width: 250px;">ID 찾기</td>
+                            <td style = "vertical-align: middle; text-align: center;"><form name="findidForm" id="findidForm">
+                                <div style="display: flex; width: 370px; float:center;">
+                                    <ul class="entry_box" style="list-style: none">
+                                        <li style="font-size: x-large">
+                                            이&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp름 : <input class="i_text" id="input_box" type="name" name="user_name" style="height: 30px; width: 175px;">
+                                        </li>
+                                        <li style="font-size: x-large">
+                                            전화번호 : <input class="i_text" id="input_box" type="phonenum" name="user_phonenum" style="height: 30px;  width: 175px; ">
+                                        </li>
+                                    </ul>
+                                   
+                                </div>
+                            </form></td>
+                            <td style = "vertical-align: middle; text-align: center;"> <div class="findid_button" style="display: flex">
+                                <!-- <input type="image" src="" alt="로그인"> -->
+                                <button class="btn btn" style="background-color:rgb(31, 34, 80); color: white; width: 130px; height: 100px; 
+                                float:center; font-size: x-large; border-radius: 20px;">ID 찾기</button>
+                            </div></td>
+                        </tr>
+                        <tr>
+                            <td  style = "vertical-align: middle; text-align: center; width: 250px;">PW 찾기</td>
+                            <td style = "vertical-align: middle; text-align: center;"><form name="findidForm" id="findidForm">
+                                <div style="display: flex; width: 370px; float:center;">
+                                    <ul class="entry_box" style="list-style: none">
+                                        <li style="font-size: x-large">
+                                            I&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspD : <input class="i_text" id="input_box" type="id" name="user_id" style="height: 30px; width: 175px;">
+                                        </li>
+                                        <li style="font-size: x-large">
+                                            전화번호 : <input class="i_text" id="input_box" type="phonenum" name="user_phonenum" style="height: 30px;  width: 175px; ">
+                                        </li>
+                                    </ul>
+                                   
+                                </div>
+                            </form></td>
+                            <td style = "vertical-align: middle; text-align: center;"><div class="findpw_button" style="display: flex">
+                                <!-- <input type="image" src="" alt="로그인"> -->
+                                <button class="btn btn" style="background-color:rgb(31, 34, 80); color: white; width: 130px; height: 100px; 
+                                 float:center;font-size: x-large; border-radius: 20px;">PW 찾기</button>
+                            </div></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+    <footer class="footer text-center text-secondary" style="margin-top: 20px;">
+        <div class="land_copyright">
+            <p>Soongsil University<br>SMART SYSTEM SOFTWARE - 2020 WEB PROGRAMING TEAM 1</p>
+        </div>
+    </footer>
+    </body>
+</html>
+
