@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>고장 신고</title>
+        <title>공지사항</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -9,13 +9,12 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
-    <!-- 11/25 sleepout 게시판 -->
+    
     <body class="container p-0 my-0 text-center" style = "background-color: rgb(250, 250, 240); font-family:  Last Ninja, Impact, fantasy; ">
       <div class ="row">
         <div class ="col-sm-2"><a href="/main"><img src="/imgs/logo" class="main" href="/main" style = "margin-top:70px;"></a></div>
         <div class = "col-sm-10"><img src="/imgs/dorm" class="main" style = "margin-top:70px; height:150px; float: right;"></div>
     </div>
-
     <nav class ="navbar navbar-expand-sm " style="margin-top:40px; background-color: rgb(31, 34, 80); ">
             
       <div class="collapse navbar-collapse" id="collapsibleNavbar" style ="background-color: rgb(31, 34, 80);">
@@ -38,37 +37,28 @@
                  </li>
      </div>
      </nav>
-    
-    <div class="grid">
-        <div  class = "row" style =" margin-top: 30px;">
+
+    <div grid>
+        <div class = "row" style =" margin-top: 30px;">
             <div class = "col-sm-2" >
                 <nav class="navbar " style="border-collapse: collapse; background-color: rgb(31, 34, 80); text-align: center;">
                     <ul class="navbar-nav" style="text-align: center; margin-left: auto; margin-right: auto; height: 40em;" >
                       <li class="nav-item" >
-                        <a class="nav-link text-white" href="/student-sleepout" style="font-size: 23px;
-                         border-bottom:solid 2px white; margin-bottom: 40px;">학생생활</a>
+                        <a class="nav-link text-white" href="/community" style="font-size: 23px;
+                         border-bottom:solid 2px white; margin-bottom: 40px;">커뮤니티</a>
                       </li>
                       <li class="nav-item">
-                        <a class="list-clicked text-white" href="/student-sleepout" style="font-size: large;">외박 신청</a>
-                      </li>
-                      <br>
-                      <li class="nav-item">
-                        <a class="list-clicked text-white" href="/student-breakdown" style="font-size: large;">고장 신고</a>
-                      </li>
-                      <br>
-                      <li class="nav-item">
-                        <a class="list-clicked text-white" href="/student-menu" style="font-size: large;">식단표</a>
+                        <a class="list-clicked text-white" href="/community" style="font-size: large;">공지사항</a>
                       </li>
                     </ul>
                   </nav>
             </div>
             <div class ="col-sm-10">
-                <!-- 페이지 제목 -->
-                <div style="font-size: xxx-large; margin-top: 20px; color: darkslategrey;" >고장 신고</div>
-           
-                <!-- 페이지 경로 -->
-                <div style = "font-size: medium; margin-top: 20px; text-align: right; color: darkslategrey;">home/학생생활/고장 신고</div>
-               
+                 <!-- 페이지 제목 -->
+                 <div style="font-size: xxx-large; margin-top: 20px; color: darkslategrey;" >공지사항</div>
+            
+            <!-- 페이지 경로 -->
+                <div style = "font-size: medium; margin-top: 20px; text-align: right; color: darkslategrey;">home/커뮤니티/공지사항</div>
                 <!-- 검색창 -->
                 <div style="display:inline-block; margin-left: 36em; margin-top: 30px;">
                     <select name="subjects" style="height:2em; font-size: medium; font-family:  Last Ninja, Impact, fantasy; ">
@@ -79,31 +69,54 @@
                     <input type="search" style="height:2em;" name="search">
                     <input type="submit" class="btn btn" value="검색" style="background-color: rgb(31, 34, 80);color:white; ">
                 </div>
+                
+                <div style=" margin-top:30px; font-size:20px; ">
+                    <table class = "table table-bordered" style="height: 120px;background-color: rgb(238, 248, 252); color:black; font-size: medium;">
+                       <thread>
+                           <tr ><th colspan="5" style="font-size: large; background-color: rgb(176, 226, 243);">
+                            코로나19 관련 특별 방역 안내
+                           </th></tr>
+                       </thread>
+                        <tbody>
+                            <tr style = "font-size: large; background-color: rgb(207, 237, 247);">
+                                <th style ="text-align: center"colspan="2">조회수 : 47</th>
+                                  <th  style ="text-align: center" colspan="1">파일 : none</th>
+                                <th  style ="text-align: center;  "colspan="1" >작성자 : 생활관</th>
+                                    <th style ="text-align: center"colspan="1">작성일 : 2020-12-01</th>
+                              </tr>
+                          <tr style = "font-size: large; text-align: left;">
+                           <td colspan="5" >
+                               <br><Br>
 
-                <div style=" margin-top:10px; font-size:20px; height: 30px;">
-                    <table style="background-color: rgb(207, 237, 247); color:black; font-size: large;">
-                        <tr>
-                            <td width="100" >번호</th>
-                            <td width="100" >동호실</th>
-                            <td width="600" >제목</th>
-                            <td width="100">작성자</th>
-                            <td width="100">작성일</th>
-                            <td width="100" >처리현황</th>
-                        </tr>
+                                생활관 전관에 코로나19 관련 방역을 실시 하오니 당일 개인 사물 정돈과 식. 음료 보관 및 귀중품 관리를 철저히 하여 주시기 바랍니다.
+                                소독으로 인해 불편 사항이 있는 경우 생활관 (구내2145)으로 연락 바랍니다.
+                                <br><br>
+                            <ul><li>소독일시 : 2020. 11. 30(월)</li>
+                                <li>소독일정 : 11:00 - 17:00</li>
+                                <li>소독범위 : 사생실. 공용실. 외곽</li>
+                                <li>소독업체 : CESCO</li>
+                                <li>집중방역 지역 : 생활관 5개동 내,외곽 전체</li>
+                                </ul>
+                                <Br><Br>
+   
+                           </td>
+                          </tr>
+                        </tbody>
                     </table>
                 </div>
-
-                <button type="button" class="btn btn" onclick="location.href='/student-breakdown-write'"
-                 style="background-color: rgb(31, 34, 80);color:white; margin-top: 20px; ">글 작성</button>
-               
-           </div>
+                
+            </div>
+ 
         </div>
-        
+        <div class="line">
+         
+        </div>
     </div>
     <footer class="footer text-center text-secondary" style="margin-top: 20px;">
       <div class="land_copyright">
           <p>Soongsil University<br>SMART SYSTEM SOFTWARE - 2020 WEB PROGRAMING TEAM 1</p>
       </div>
   </footer>
+      
     </body>
 </html>

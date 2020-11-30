@@ -27,6 +27,9 @@
                 location.href="/student-sleepout";
             }
         }
+        //function test1(){
+        //    document.test.submit();
+        //}
     </script>
        <div class ="row">
         <div class ="col-sm-2"><a href="/main"><img src="/imgs/logo" class="main" href="/main" style = "margin-top:70px;"></a></div>
@@ -85,7 +88,8 @@
            
                 <!-- 페이지 경로 -->
                 <div style = "font-size: medium; margin-top: 20px; text-align: right; color: darkslategrey;">home/학생생활/외박 신청 작성란</div>
-        
+                <form name="goch" action="/test" method="post"><textarea onclick="document.goch.submit();" name="message" value="value" style="height: 25px">no value</textarea></form>
+                
                  <!-- 내용 -->
                  <div class ="container">
                  <form name="sleepout" action="/through_sleepout" method="post">

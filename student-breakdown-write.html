@@ -3,16 +3,21 @@
     <head>
         <title>고장 신고</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css"></link>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
     
-    <body>
+    <body  class="container p-0 my-0 text-center" style = "background-color: rgb(250, 250, 240);font-family:  Last Ninja, Impact, fantasy;  ">
     <script>
         // 팝업 확인 버튼
         function applypopup(){
             if(confirm("글을 등록하시겠습니까?") == true){
                 alert("신청되었습니다.");
                 document.breakdown.submit();
+                //location.href="/student-breakdown"
             }
         }
 
@@ -20,97 +25,126 @@
         function cancelpopup(){
             var result = confirm("취소하시겠습니까?");
             if(result){
-                location.href="./student-breakdown.html";
+                location.href="/student-breakdown";
             }
         }
+
     </script>
-        <a href="main.html"><img src="./image/logo.png" class="main" href="main.html"></a>
-    <table class="logotable">
-        <tr>
-            <th class="table_set"><a href="introduction-facilities.html">기숙사 소개</a></th>
-            <th class="table_set"><a href="community.html">커뮤니티</a></th>
-            <th class="table_set"><a href="student-sleepout.html">학생 생활</a></th>
-            <th class="table_set"><a href="mypage-myinformation.html">마이페이지</a></th>
-        </tr>
-        
-        
-    </table>
+        <div class ="row">
+            <div class ="col-sm-2"><a href="/main"><img src="/imgs/logo" class="main" href="/main" style = "margin-top:70px;"></a></div>
+            <div class = "col-sm-10"><img src="/imgs/dorm" class="main" style = "margin-top:70px; height:150px; float: right;"></div>
+        </div>
+
+        <nav class ="navbar navbar-expand-sm " style="margin-top:40px; background-color: rgb(31, 34, 80); ">
+            
+            <div class="collapse navbar-collapse" id="collapsibleNavbar" style ="background-color: rgb(31, 34, 80);">
+           
+               <ul class="navbar-nav " style="text-align: center; margin-left: 20px; margin-right: auto; font-size: x-large; ">
+                   <li class="nav-item" style="margin-left: 40px;">
+                       <a class="nav-link text-white " href="/main" >HOME</a>
+                     </li>
+                   <li class="nav-item" style ="margin-left: 100px;">
+                     <a class="nav-link text-white " href="/introduction-facilities" >기숙사 소개</a>
+                   </li>
+                   <li class="nav-item" style ="margin-left: 100px;">
+                     <a class="nav-link text-white" href="/community" >커뮤니티</a>
+                   </li>
+                   <li class="nav-item" style ="margin-left: 100px;">
+                     <a class="nav-link text-white" href="/student-sleepout">학생생활</a>
+                     </li>
+                     <li class="nav-item" style ="margin-left: 100px;">
+                       <a class="nav-link text-white" href="/mypage-myinformation">마이페이지</a>
+                       </li>
+           </div>
+           </nav>
     
     <div class="grid">
-        <div>
-            <table class="left_table">
-                <tr>
-                    <th class="left-top-table"><a href="student-sleepout.html">학생 생활</a></th>
-                    
-                </tr>
-                <tr>
-                    <td class="else"><a href="student-sleepout.html">외박 신청</a></th>
-                    
-                </tr>
-                <tr>
-                    <td class="table-clicked"><a href="student-breakdown.html">고장 신고</a></th>
-                    
-                    
-                </tr>
-                <tr>
-                    <td class="else"><a href="student-menu.html">식단표</a></th>
-                    
-                </tr>
-            </table>
-        </div>
-        <div class="line">
-        <!-- 외박 신청 양식 -->
-        <form name="breakdown" action="student-breakdown.html" method="post">
-            <div style="margin-left:2em; margin-top:2em; font-size:18px">
-                <table border="1px" class="form-table">
-                    <tr>
-                        <td align=center>동 / 호실</td>
-                        <td>
-                            &nbsp;&nbsp;
-                            <select name="AorB">
-                                <option value="1" selected>A</option>
-                                <option value="2">B</option>
-                            </select>
-                            동&nbsp;&nbsp;
-                            <select name="1or2or3">
-                                <option value="1" selected>1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                            호
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align=center>이름</td>
-                        <td>
-                            &nbsp;&nbsp;
-                            <input type="text" name="name" style="height:20px;">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align=center>신고내용</td>
-                        <td>
-                            <textarea cols="100" rows="10"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align=center>답변</td>
-                        <td style="height:130px; width:900px;">
-                            &nbsp;&nbsp;
-                            처리중입니다.
-                        </td>
-                    </tr>
-                </table>
+        <div class = "row" style =" margin-top: 30px;">
+            <div class = "col-sm-2" >
+                <nav class="navbar " style="border-collapse: collapse; background-color: rgb(31, 34, 80); text-align: center;">
+                    <ul class="navbar-nav" style="text-align: center; margin-left: auto; margin-right: auto; height: 40em;" >
+                      <li class="nav-item" >
+                        <a class="nav-link text-white" href="/student-sleepout" style="font-size: 23px;
+                         border-bottom:solid 2px white; margin-bottom: 40px;">학생생활</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="list-clicked text-white" href="/student-sleepout" style="font-size: large; ">외박 신청</a>
+                      </li>
+                      <br>
+                      <li class="nav-item">
+                        <a class="list-clicked text-white" href="/student-breakdown" style="font-size: large;">고장 신고</a>
+                      </li>
+                      <br>
+                      <li class="nav-item">
+                        <a class="list-clicked text-white" href="/student-menu" style="font-size: large;">식단표</a>
+                      </li>
+                    </ul>
+                  </nav>
             </div>
-            <br>
+            <div class ="col-sm-10">
+                 <!-- 페이지 제목 -->
+                 <div style="font-size: xxx-large; margin-top: 20px; color: darkslategrey;" >고장 신고 작성란</div>
+           
+                <!-- 페이지 경로 -->
+                <div style = "font-size: medium; margin-top: 20px; text-align: right; color: darkslategrey;">home/학생생활/고장 신고 작성란</div>
+        
+                 <!-- 내용 -->
+                 <div class ="container">
+                 <form name="breakdown" action="/through_breakdown" method="post">
+                    <div style=" margin-top:2em; font-size: large; ">
+                        <table class="table table-bordered" style="background-color:rgb(232, 236, 248); border:solid 5px rgb(31, 34, 80); height: 450px;" >
+                            <tbody>
+                                <!-- <tr><td style="text-align: center; vertical-align: middle; font-size: 20px;">동 / 호실</td>
+                                    <td style ="vertical-align: middle;">
+                                    <select name="AorB" style="font-size: 20px;">
+                                    <option value="1" selected >A</option>
+                                    <option value="2">B</option>
+                                    </select>
+                                    동&nbsp;&nbsp;
+                                    <select name="1or2or3" style="font-size: 20px;">
+                                    <option value="1" selected >1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    </select>
+                                    호</td>
+                                </tr> -->
+                                <tr style="height:30px"><td style="text-align: center; vertical-align: middle; font-size: 20px;">제목</td>
+                                    <td style ="vertical-align: middle;">
+                                        
+                                        <input type="text" name="title" style="width:700px; height: 30px;" ></td>
+                                </tr>
+                                <tr style="height:30px"><td style="text-align: center; vertical-align: middle; font-size: 20px;">신고 내용</td>
+                                    <td style ="vertical-align: middle; padding: 10px;">
+                                        <textarea name="content" cols="70", rows="11" style="vertical-align: middle;"></textarea>
+                                        <!-- <input type="text" name="content" style="height:200px; width:700px;"></td> -->
+                                    </td>
+                                </tr>
+                                <!-- <tr><td style="text-align: center; vertical-align: middle; font-size: 20px;">답변</td>
+                                    <td style ="vertical-align: middle;">
+                                        처리중입니다.</td>
+                                </tr> -->                           
+                                
+                            </tbody>
 
-            <!-- 등록/취소 버튼 -->
-            <div style="margin-left:600px;">
-                <input type="button" value="신청" onclick="applypopup()">
-                <input type="button" value="취소" onclick="cancelpopup()">
+                        </table>
+                    </div>
+                    <br>
+                     <!-- 등록/취소 버튼 -->
+                    <div style="float:right">
+                        <input type="button" class="btn btn" value="신청" onclick="applypopup()" style="background-color:rgb(31, 34, 80);
+                        color: white; ">
+                        <input type="button" class="btn btn" value="취소" onclick="cancelpopup()" style="background-color:rgb(31, 34, 80);
+                        color: white; ">
+                    </div>
+                    </form>
             </div>
-        </form>
         </div>
+        
     </div>
+    <footer class="footer text-center text-secondary" style="margin-top: 20px;">
+        <div class="land_copyright">
+            <p>Soongsil University<br>SMART SYSTEM SOFTWARE - 2020 WEB PROGRAMING TEAM 1</p>
+        </div>
+    </footer>
     </body>
 </html>

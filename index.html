@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap Main</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    
+    <body class="container p-0 my-0" style="background-color: rgb(250, 250, 240);font-family:  Last Ninja, Impact, fantasy;  ">   
+        <!-- Header -->
+        <div class="row text-center" style="margin:30px">
+            <div class="col-sm-4">
+                <a href="/main"><img src="/imgs/logo" class="main" href="/main" style="margin-top:20px;"></a>
+            </div>
+            <div class="col-sm-8" style="margin-top: auto;">
+                <img src="/imgs/dorm_main" style="width: 100%; height:120px; border-radius:10px">
+                <ul class="nav nav-tabs" style="justify-content: space-between; background-color:rgb(31, 34, 80)">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-warning" data-toggle="dropdown" href="#">기숙사 소개</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/introduction-facilities">시설소개</a>
+                            <a class="dropdown-item" href="/introduction-map">약도</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-warning" data-toggle="dropdown" href="#">커뮤니티</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/community">공지사항</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-warning" data-toggle="dropdown" href="#">학생 생활</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/student-sleepout">외박신청</a>
+                            <a class="dropdown-item" href="/student-breakdown">고장신고</a>
+                            <a class="dropdown-item" href="/student-menu">식단표</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-warning" data-toggle="dropdown" href="#">마이페이지</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/mypage-myinformation">내 정보</a>
+                            
+                        </div>
+                    </li>
+                  </ul>
+            </div>
+        
+        </div>
+        
+        <!-- Body -->
+        <div class="grid">
+            <div class="row" style="justify-content: space-between;">
+                <!-- Login Form -->
+                <div class="col-sm-3" style="background-color:rgb(149, 211, 162); padding-top:20px; border-radius:10%">
+                    <h3>LOGIN</h3>
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                          <label for="email" style="font-size: 18px;">ID:</label>
+                          <input type="id" class="form-control" id="id" placeholder="Enter ID" name="id">
+                        </div>
+                        <div class="form-group">
+                          <label for="pwd" style="font-size: 18px;">Password:</label>
+                          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submit" style="width:80%; margin-left:30px"><b>로 그 인</b></button>
+                    </form>
+
+                    <script>
+                        $(document).ready(function(){
+                            $('#submit').click(function(){
+                                if($('#id').val().length == 0){
+                                    alert("ID를 입력하시오.");
+                                    $('#id').focus();
+                                    return false;
+                                }
+                                if($('#pwd').val().length == 0){
+                                    alert("비밀번호를 입력하시오.");
+                                    $('#pwd').focus();
+                                    return false;
+                                }
+                            })
+                        })
+                    </script>
+
+                    <hr>
+                    <div class="text-center">
+                        <a class="text-white" href="/findid" style="text-decoration:none; font-size:20px">아이디 / 비밀번호 찾기</a>
+                    </div>
+                </div>
+                <!-- /Login Form -->
+
+                <!-- Notice -->
+                <div class="col-sm-4" style="background-color: rgb(190, 235, 243); padding-top:20px; border-radius:10%">
+                    <div class="row" style="margin:10px; justify-content: space-between;">
+                        <h3>Notice</h3>
+                        <button class="btn btn-secondary" onclick="location.href='/community';">+ 더보기</button>
+                    </div>
+    
+                    <div class="notice_contents">
+                        <ul>
+                            <li><a href="/community-content7" class="text-dark" style="font-size:medium">코로나19 확산에 따른 마스크 미착용자 벌점 운영</a><hr></li>
+                            <li><a href="/community-content6" class="text-dark" style="font-size:medium">코로나19 관련 특별 방역 안내</a><hr></li>
+                            <li><a href="/community-content5" class="text-dark" style="font-size:medium">2020 동계 방학 생활관 개관 안내</a><hr></li>
+                            <li><a href="/community-content4" class="text-dark" style="font-size:medium">2020년도 인구주택총조사 인터넷 조사 협조 요청</a><hr></li>
+                            <li><a href="/community-content3" class="text-dark" style="font-size:medium">2020년 2학기 중도퇴사시 환불금액</a><hr></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /Notice -->
+
+                <!-- Content Menu -->
+                <div class="col-sm-4" style="background-color: rgb(248, 216, 145); padding-top:20px; border-radius:10%">
+                    <div class="row" style="justify-content: space-between; margin:20px">
+                        <a href="/introduction-map" class="text-dark" style="width: 40%; text-align:center">
+                            <img src="/imgs/icon_map" href="/introduction-map" style="width: 100%;"><b>약도</b></a>
+                        <a href="/student-sleepout" class="text-dark" style="width: 40%; text-align:center">
+                            <img src="/imgs/icon_sleepout" href="/student-sleepout" style="width: 100%;"><b>외박신청</b></a>
+                    </div>
+                    <div class="row" style="justify-content: space-between; margin:20px">
+                        <a href="/student-breakdown" class="text-dark" style="width: 40%; text-align:center">
+                            <img src="/imgs/icon_breakdown" href="/student-breakdown" style="width: 100%;"><b>고장신고</b></a>
+                        <a href="/student-menu" class="text-dark" style="width: 40%; text-align:center">
+                            <img src="/imgs/icon_menu" href="/student-menu" style="width: 100%;"><b>주간메뉴</b></a>
+                    </div>
+                </div>
+                <!-- /Content Menu -->
+            </div>
+        </div>
+        
+        <footer class="footer text-center text-secondary" style="margin-top: 20px;">
+            <div class="land_copyright">
+                <p>Soongsil University<br>SMART SYSTEM SOFTWARE - 2020 WEB PROGRAMING TEAM 1</p>
+            </div>
+        </footer>
+    </body>
+</html>
